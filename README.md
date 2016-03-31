@@ -19,7 +19,7 @@ use Goez\PageObjects\Page;
 
 class Home extends Page
 {
-    protected $elements = [
+    protected $parts = [
         'SearchForm' => ['css' => 'form'],
     ];
 
