@@ -4,6 +4,7 @@ namespace Goez\PageObjects;
 
 use BadMethodCallException;
 use Behat\Mink\Element\TraversableElement;
+use Behat\Mink\Element\NodeElement;
 use Behat\Mink\Session;
 use DOMElement;
 use Goez\PageObjects\Exception\ElementNotFoundException;
@@ -138,7 +139,7 @@ abstract class PageObject
     protected $prefix = '';
 
     /**
-     * @var TraversableElement
+     * @var TraversableElement|NodeElement
      */
     protected $element = null;
 
@@ -217,7 +218,7 @@ abstract class PageObject
     }
 
     /**
-     * @return TraversableElement
+     * @return TraversableElement|NodeElement
      */
     public function getElement()
     {
